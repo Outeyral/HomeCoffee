@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../Stylesheet/contactstyle.css">
+    <title>Contactate con nosotros</title>
+</head>
+<body>
+    <fieldset id="wrapper">
+        <h1>Contactate con nosotros</h1>
+        <form action="https://formspree.io/f/xnnqqpok" method="post" target="_blank">
+            <div class="contact">
+                <label for="first-name">Nombre: </label>
+                <input type="text" name="first-name" id="first-name" required>
+            </div>
+            <div class="contact">
+                <label for="last-name">Apellido: </label>
+                <input type="text" name="last-name" id="last-name" required>
+            </div>
+            <div class="contact">
+                <label for="email">Email: </label>
+                <input type="text" name="email" id="email" required>
+            </div>
+            <div class="contact">
+                <label for="comment">Escribí tu mensaje:<textarea name="comment" rows="5" cols="100" placeholder="Ingresar comentario"></textarea></label>
+            </div>
+            <input class="btn" type="submit" value="submit">
+        </form>
+        <p><a href="../index.html">Volver al Inicio</a></p>
+    </fieldset>
+</body>
+</html>
