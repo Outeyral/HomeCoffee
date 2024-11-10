@@ -106,5 +106,5 @@ h1{
 }
 
 body {
-    background-image: url(/Multimedia/back.jpg);
+    background-image: url("../Multimedia/back.jpg");
 }
