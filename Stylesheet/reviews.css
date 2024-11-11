@@ -5,6 +5,11 @@
     font-family: "poppins";
 }
 
+
+body{
+    min-width: 370px;
+}
+
 #reviews .wrapper{
     display: flex;
     flex-wrap: wrap;
