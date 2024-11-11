@@ -5,17 +5,7 @@
     font-family: "poppins";
 }
 
-section {
-    width: 100%;
-    min-height: 90vh;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    overflow: hidden;
-}
-
-section .wrapper{
+#reviews .wrapper{
     display: flex;
     flex-wrap: wrap;
     align-items: center;
@@ -24,7 +14,7 @@ section .wrapper{
     padding: 1rem 2rem;
 }
 
-section .wrapper .box{
+#reviews .wrapper .box{
     display: relative;
     min-width: 350px;
     max-width: 450px;
@@ -91,14 +81,19 @@ section .wrapper .box{
 #reviews{
     margin-top: 50px;
     display: flex;
-    justify-content: center;
+    flex-direction: column;
     align-items: center;
-    width: 100%;
+    justify-content: center;
+    overflow: hidden;
+    align-items: center;
     border: 1px solid gray;
     border-radius: 10px;
     box-shadow: 0 0 10px rgba(0, 0, 0, .2);
     background-color: transparent;
     backdrop-filter: blur(15px);
+    width: 100%;
+    min-height: 90vh;
+    
 }
 
 h1{
