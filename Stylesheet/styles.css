@@ -21,6 +21,7 @@ html {
 }
 
 
+
 body{
     color: var(--bg1-color);
     display: grid;
@@ -146,6 +147,7 @@ select  {
     border: 10px solid var(--bg1-color);
     box-shadow: 0 5px 15px rgba(0, 0, 0, .1);
     overflow: hidden;
+    border-radius: 10px 10px 0 0;
 }
 
 .gallery .image-container .image:hover img{
