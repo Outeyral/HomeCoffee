@@ -5,7 +5,6 @@ let cart = JSON.parse(localStorage.getItem('cart')) || [];
 const getProducts = async ()=> {
     const response = await fetch("../JSON/data.json");
     const data = await response.json();
-    console.log(data)
 };
 
 
@@ -38,6 +37,9 @@ function addToCart(event) {
         price: event.target.getAttribute("data-price")
     }
 
+    const cartList = document.querySelector('#addToCart');
+
+
     var cart = JSON.parse(localStorage.getItem("cart")) || [];
     cart.push(product)
 
@@ -60,7 +62,7 @@ document.addEventListener('DOMContentLoaded', () => {
     updateCartView();
 
     // Agregar event listeners para botones de ejemplo
-    document.querySelectorAll('.add-to-cart').forEach(button => {
+    document.querySelectorAll('.addToCart').forEach(button => {
         button.addEventListener('click', () => {
             const name = button.dataset.name;
             const price = parseFloat(button.dataset.price);
