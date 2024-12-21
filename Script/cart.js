@@ -1,10 +1,38 @@
+let iconCart = document.querySelector("#icon-cart");
+let closeCart = document.querySelector(".close");
+let body = document.querySelector("body");
+let cartItemsHTML = document.querySelector("#cart-items");
 
-//Item cart
-let cart = JSON.parse(localStorage.getItem('cart')) || [];
+let cartItems = [];
+
+
+const initApp = () => {
+    fetch("../JSON/data.json")
+    .then(response => response.json())
+    .then(data => {
+        cartItems = data;
+        console.log(cartItems)
+    })
+}
+initApp()
+
+iconCart.addEventListener("click", () => {
+    body.classList.toggle("showCart")
+})
+
+closeCart.addEventListener("click", () => {
+    body.classList.toggle("showCart")
+})
+
+
+let cart = JSON.parse(localStorage.getItem("cart")) || [];
+localStorage.setItem("cart", JSON.stringify(cart));
+
 
 const getProducts = async ()=> {
-    const response = await fetch("../JSON/data.json");
+    const response = await fetch("data.json");
     const data = await response.json();
+    console.log(data)
 };
 
 
@@ -14,7 +42,7 @@ function updateCartView() {
     var cartList = document.getElementById("cart-items");
     var count = document.getElementById("cart-count");
 
-    cartList.innerHTML = "";
+    //cartList.innerHTML = "";
     for (var i = 0; i < cart.length; i++) {
         var product = cart[i];
         var list = document.createElement("li");
@@ -74,5 +102,5 @@ document.addEventListener('DOMContentLoaded', () => {
  // Mostrar/ocultar carrito flotante
  function toggleCart() {
     const cartBody = document.querySelector('.cart-body');
-    cartBody.style.display = cartBody.style.display === 'none' || cartBody.style.display === '' ? 'block' : 'none';
+    cartBody.style.display = cartBody.style.display === 'block' || cartBody.style.display === '' ? 'none' : 'block';
 }

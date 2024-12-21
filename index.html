@@ -12,7 +12,7 @@
     <script type="text/javascript" src="./Script/cart.js"></script>
     <title>HomeCoffee</title>
 </head>
-<body>
+<body class="show-cart">
     <header>
         <nav class="navbar">
             <div class="banner">
@@ -33,13 +33,36 @@
                 <a>Mi cuenta</a>
                 <a href="./Pages/contact.html">Contactate</a>
                 <div id="cart">
-                    <div class="floating-cart">
+                    <button id="icon-cart" class="material-symbols-outlined" onclick="toggleCart()">shopping_cart</button><span id="cart-count">(0)</span>
+                     <!-- Carrito -->
+                    <div class="floating-cart" style="display: block">
+                        <h2>Carrito</h2>
                         <div class="cart-body">
-                            <div id="cart-items"></div>
+                            <div id="cart-items">
+                                <div class="item">
+                                    <div class="image">
+                                        <img src="./Multimedia/pitcherreshoot.webp">
+                                    </div>
+                                    <div class="name">
+                                        Pitcher
+                                    </div>
+                                    <div class="price">
+                                        $2000
+                                    </div>
+                                    <div class="quantity">
+                                        <span class="minus"><</span>
+                                        <span>1</span>
+                                        <span class="plus">></span>
+                                    </div>
+                                </div>
+                            </div>
                             <div id="cart-total">Total: $0.00</div>
+                            <div class="btn">
+                                <button id="close">Cerrar</button>
+                                <button id="checkout">Finalizar Compra</button>
+                            </div>
                         </div>
                     </div>
-                    <button class="material-symbols-outlined" onclick="toggleCart()">shopping_cart</button><span id="cart-count">(0)</span>
                 </div>
             </ul>
         </nav>
@@ -63,7 +86,7 @@
                 <h2>PRODUCTOS</h2>
             </div>
                 <div class="image-container">
-                    <div class="image"><img src="Multimedia/pitcherreshoot.webp" alt="250ml Pitcher"><button id="addToCart">Agregar al carrito</button></div>
+                    <div class="image"><img src="Multimedia/pitcherreshoot.webp" alt="250ml Pitcher"><button id="addToCart" onclick="addToCart()">Agregar al carrito</button></div>
                     <div class="image"><img src="Multimedia/pitcher.webp" alt="500ml and 750ml pitchers"><button id="addToCart">Agregar al carrito</button></div>
                     <div class="image"><img src="Multimedia/tamper.jpg" alt="tamper 57mm"><button id="addToCart">Agregar al carrito</button></div>
                     <div class="image"><img src="Multimedia/autotamper.webp" alt="producto1"><button id="addToCart">Agregar al carrito</button></div>
