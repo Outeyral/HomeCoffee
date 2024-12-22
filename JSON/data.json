@@ -3,71 +3,61 @@
         "id": 1,
         "name": "Pitcher",
         "price": 2000,
-        "img": "Multimedia/pitcherreshoot.webp",
-        "stock": 1
+        "img": "Multimedia/pitcherreshoot.webp"
     },
     {
         "id": 2,
         "name": "Pitchers",
         "price": 50000,
-        "img": "Multimedia/pitcherreshoot.webp",
-        "stock": 1
+        "img": "Multimedia/pitcher.webp"
     },
     {
         "id": 3,
         "name": "Tamper",
         "price": 15000,
-        "img": "Multimedia/pitcherreshoot.webp",
-        "stock": 1
+        "img": "Multimedia/tamper.jpg"
     },
     {
         "id": 4,
         "name": "Tamper automático",
         "price": 18000,
-        "img": "Multimedia/pitcherreshoot.webp",
-        "stock": 1
+        "img": "Multimedia/autotamper.webp"
     },
     {
         "id": 5,
         "name": "Distribuidor",
         "price": 19000,
-        "img": "Multimedia/pitcherreshoot.webp",
-        "stock": 1
+        "img": "Multimedia/distribuidor.avif"
     },
 
     {
         "id": 6,
         "name": "V60",
         "price": 320000,
-        "img": "Multimedia/pitcherreshoot.webp",
-        "stock": 1
+        "img": "Multimedia/dripper.webp"
     },
     {
         "id": 7,
         "name": "Espresso ROCKET",
         "price": 2000000,
-        "img": "Multimedia/pitcherreshoot.webp",
-        "stock": 1
+        "img": "Multimedia/rocket.webp"
     },
     {
         "id": 8,
         "name": "Aeropress",
         "price": 450000,
-        "img": "Multimedia/pitcherreshoot.webp",
-        "stock": 1
+        "img": "Multimedia/aero.webp"
     },
     {
         "id": 9,
         "name": "Chemex",
         "price": 750000,
-        "img": "Multimedia/pitcherreshoot.webp",
-        "stock": 1
+        "img": "Multimedia/chemex1.webp"
     },
     {
         "id": 10,
         "name": "Kettle Cuello Cisne",
         "price": 80000,
-        "img": "Multimedia/pitcherreshoot.webp",
-        "stock": 1
+        "img": "Multimedia/kettle.webp"
     }
 ]
