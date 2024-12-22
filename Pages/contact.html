@@ -13,22 +13,27 @@
         <form action="https://formspree.io/f/xnnqqpok" method="post" target="_blank" id="form2">
             <div class="contact">
                 <label for="first-name">Nombre: </label>
-                <input type="text" name="first-name" id="first-name" required>
-            </div>
+                <input type="text" name="first-name" id="first-name" >
+                <span id="nameError" style="color: red;"></span><br></br>
+            </div>  
             <div class="contact">
                 <label for="last-name">Apellido: </label>
-                <input type="text" name="last-name" id="last-name" required>
+                <input type="text" name="last-name" id="last-name" >
+                <span id="lastNameError" style="color: red;"></span><br></br>
             </div>
             <div class="contact">
                 <label for="email">Email: </label>
-                <input type="text" name="email" id="email" required>
+                <input type="text" name="email" id="email">
+                <span id="emailError" style="color: red;"></span><br></br>
             </div>
             <div class="contact">
-                <label for="comment">Escribí tu mensaje:<textarea name="comment" rows="5" cols="50" placeholder="Ingresar comentario"></textarea></label>
+                <label for="comment">Escribí tu mensaje:<textarea id="text" name="comment" rows="5" cols="50" placeholder="Ingresar comentario"></textarea></label>
+                <span id="textError" style="color: red;"></span><br></br>
             </div>
-            <input class="btn" type="submit" value="submit">
+            <button type="submit">Enviar</button>
         </form>
         <p><a href="../index.html">Volver al Inicio</a></p>
     </fieldset>
+    <script src="../Script/form.js"></script>
 </body>
 </html>

@@ -225,7 +225,6 @@ select  {
 /* CART */
 .cartTab{
     width: 400px;
-    height: auto;
     background-color: #353432;
     color: #eee;
     position: fixed;
