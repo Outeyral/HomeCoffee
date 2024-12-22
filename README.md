@@ -13,5 +13,5 @@ Este es un proyecto de una página web de e-commerce de café. El sitio permite 
 
 - **HTML5**: Estructura básica del sitio web.
 - **CSS3**: Estilización y diseño responsivo de la interfaz.
-- **Javascript**: Back-end y funcionalidad de servidor.
+- **Javascript**: Front-end y funcionalidad de servidor.
 
