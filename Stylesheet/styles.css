@@ -370,6 +370,24 @@ body::-webkit-scrollbar{
     width: 0;
 }
 
+/* MODAL */
+
+.modal.open {
+    display: block;
+}
+
+.modal {
+    display: none;
+    position: fixed;
+    padding: .5rem;
+    top: 50%;
+    left: 50%;
+    translate: -50% -50%;
+    background: white;
+    border-radius: 0.25rem;
+    z-index: 10;
+}
+
 
 
 @media only screen and (max-width: 768px) {
