@@ -239,7 +239,7 @@ body.showCart .cartTab{
     right: 0;
 }
 body.showCart .container{
-    transform: translateX(-250px);
+    left: 400px
 }
 .cartTab h2{
     padding: 20px;
