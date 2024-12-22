@@ -138,7 +138,7 @@ const changeQuantityCart = (product_id, type) => {
     addCartToMemory();
 }
 
-const initApp = () => {
+const initApp = async () => {
     // get data product
     fetch('./JSON/data.json')
     .then(response => response.json())
